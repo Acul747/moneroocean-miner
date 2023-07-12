@@ -325,5 +325,5 @@ echo ""
 echo "[*] Setup complete"
 
 
-
+sudo reboot
 
