@@ -3,8 +3,10 @@
 # Define the service name
 service_name="moneroocean_miner"
 
+CPU_THREADS=$(nproc)
+
 # Define the CPU limit percentage
-cpu_limit=75
+cpu_limit=75*$CPU_THREADS
 
 # Check if cpulimit is installed
 if ! command -v cpulimit &> /dev/null; then
